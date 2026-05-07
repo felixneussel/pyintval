@@ -1,0 +1,1 @@
+A package for performing computations with intervals as well as vectors and matrices of intervals.
