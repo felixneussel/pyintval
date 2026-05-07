@@ -4,8 +4,15 @@ version = "0.1.0"
 description = "Seamless interval arithmetic"
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "numpy>=2.4.4",
+]
 
 
 [tool.setuptools]
 py-modules = ['interval_arithmetic']
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]
