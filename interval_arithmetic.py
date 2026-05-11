@@ -418,9 +418,12 @@ def log(x):
         return x.log()
     return np.log(x)
 
+def sin(x):
+    if isinstance(x, Interval) or isinstance(x,IntervalVector):
+        return x.sin()
+    return np.sin(x)
 
-if __name__ == '__main__':
-    x = Interval(1/3,4/3)
-    x_bar = Interval(4/3,11/6)
-    a = (x / x_bar) * (4 - 2*x) / (4 - 2*x_bar)
-    print(a)
+def cos(x):
+    if isinstance(x, Interval) or isinstance(x,IntervalVector):
+        return x.cos()
+    return np.cos(x)
